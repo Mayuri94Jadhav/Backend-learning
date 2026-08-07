@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All chats</title>
+    <title>Mini whatsapp</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h3>All Chats</h3>
+        <% if (chats.length === 0) { %>
+            <p>No chats found.</p>
+        <% } %>
+        <% for (let chat of chats) { %>
+            <div class="chat">
+                <p><strong>From:</strong> <%= chat.from %></p>
+                <div class="msg">
+                    <p><%= chat.msg %></p>
+                </div>
+                <p><strong>Received by</strong> <%= chat.to %></p>
+                <hr/>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html> 

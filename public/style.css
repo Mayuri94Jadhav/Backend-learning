@@ -1,0 +1,13 @@
+body {
+margin:20px;
+}
+.chat {
+    background-color: rgb(104, 164, 215);;
+
+}
+
+.msg{
+    background-color: blue;
+    color: white;
+    padding:5px 15px;
+}
